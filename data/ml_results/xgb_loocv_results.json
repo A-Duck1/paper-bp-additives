@@ -1,0 +1,47 @@
+{
+  "descriptors": {
+    "homo": {
+      "loocv_r2": 0.6551,
+      "loocv_mae": 0.2594,
+      "n_samples": 48
+    },
+    "lumo": {
+      "loocv_r2": 0.5083,
+      "loocv_mae": 0.3424,
+      "n_samples": 48
+    },
+    "gap": {
+      "loocv_r2": 0.6034,
+      "loocv_mae": 0.3836,
+      "n_samples": 48
+    }
+  },
+  "morgan": {
+    "homo": {
+      "loocv_r2": 0.6199,
+      "loocv_mae": 0.2634,
+      "n_samples": 48
+    },
+    "lumo": {
+      "loocv_r2": 0.4495,
+      "loocv_mae": 0.3349,
+      "n_samples": 48
+    },
+    "gap": {
+      "loocv_r2": 0.5544,
+      "loocv_mae": 0.4523,
+      "n_samples": 48
+    }
+  },
+  "metadata": {
+    "n_samples": 53,
+    "feature_sets": [
+      "descriptors (217 RDKit)",
+      "morgan (2048-bit)"
+    ],
+    "model": "XGBRegressor(n_estimators=300, max_depth=6, learning_rate=0.1)",
+    "cv_method": "Leave-One-Out",
+    "elapsed_seconds": 53.5,
+    "timestamp": "2026-05-24 10:55:22"
+  }
+}

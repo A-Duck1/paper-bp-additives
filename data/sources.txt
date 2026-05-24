@@ -1,0 +1,7 @@
+数据版本: v2
+时间: 2026-05-23T19:28:47.738857
+训练集: 31 个 (B:10, P:11, Ref:9)
+候选集: 719 个
+描述符: RDKit 217维 + Morgan2048
+模型: RF + XGBoost
+数据来源: Electrolyte Genome, J. Mater. Chem., ACS Energy Lett., JACS

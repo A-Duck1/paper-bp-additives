@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.env
+
+# Large data (kept local)
+D:\pubchem_data\*
+.D:\pubchem_data\*
+pubchem_data/
+
+# Config with API keys
+config/api_keys.json
+
+# Memory files
+memory/
+
+# Temp
+*.tmp
+*.log

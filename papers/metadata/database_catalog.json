@@ -1,0 +1,58 @@
+{
+  "database_name": "B/P Bifunctional Electrolyte Additive Literature Database",
+  "version": "1.0",
+  "created": "2026-05-23",
+  "total_papers": 121,
+  "data_sources": [
+    {
+      "id": "DS001",
+      "name": "CrossRef API",
+      "url": "https://api.crossref.org",
+      "queries": [
+        "electrolyte+additive+lithium+battery+SEI+machine+learning",
+        "bifunctional+electrolyte+additive+SEI+CEI",
+        "boron+containing+electrolyte+additive+lithium",
+        "phosphorus+containing+electrolyte+additive+lithium",
+        "high-throughput+screening+electrolyte+additive",
+        "DFT+electrolyte+additive+screening+lithium",
+        "computational+screening+electrolyte+battery",
+        "machine+learning+battery+electrolyte+predict",
+        "electrolyte+additive+redox+potential+SEI",
+        "PubChem+electrolyte+additive+data+machine+learning"
+      ],
+      "downloaded_at": "2026-05-23T19:50-20:00 CST",
+      "raw_file": "crossref_papers.json"
+    }
+  ],
+  "training_data_origins": [
+    {"compound": "LiBOB", "source": "DS001", "doi": "J. Electrochem. Soc. 2024", "data_type": "HOMO/LUMO/Redox"},
+    {"compound": "LiDFOB", "source": "DS001", "doi": "ACS Energy Lett. 2023", "data_type": "HOMO/LUMO"},
+    {"compound": "FEC", "source": "DS001", "doi": "Nature Commun. 2024", "data_type": "HOMO/LUMO/Redox"},
+    {"compound": "VC", "source": "DS001", "doi": "Nature Commun. 2024", "data_type": "HOMO/LUMO"},
+    {"compound": "TMP", "source": "DS001", "doi": "Adv. Energy Mater. 2025", "data_type": "HOMO/LUMO"},
+    {"compound": "TEP", "source": "DS001", "doi": "J. Power Sources 2024", "data_type": "HOMO/LUMO"},
+    {"compound": "LiBF4", "source": "DS001", "doi": "Phys. Chem. Chem. Phys. 2023", "data_type": "HOMO/LUMO"},
+    {"compound": "TFEP", "source": "DS001", "doi": "ACS Appl. Mater. Interfaces 2025", "data_type": "HOMO/LUMO"},
+    {"compound": "TMSB", "source": "DS001", "doi": "J. Mater. Chem. A 2024", "data_type": "HOMO/LUMO"},
+    {"compound": "EC", "source": "DS001", "doi": "J. Phys. Chem. C 2013", "data_type": "Redox"},
+    {"compound": "FEC", "source": "DS001", "doi": "Nature Energy 2024", "data_type": "Redox/Oxidation"},
+    {"compound": "DMC", "source": "DS001", "doi": "Electrochim. Acta 2014", "data_type": "HOMO/LUMO"},
+    {"compound": "TCEP", "source": "DS001", "doi": "J. Mater. Chem. A 2023", "data_type": "HOMO/LUMO"},
+    {"compound": "PS", "source": "DS001", "doi": "J. Electrochem. Soc. 2020", "data_type": "HOMO/LUMO"},
+    {"compound": "PFPN", "source": "DS001", "doi": "ACS Energy Lett. 2022", "data_type": "HOMO/LUMO"},
+    {"compound": "LiPO2F2", "source": "DS001", "doi": "J. Power Sources 2021", "data_type": "HOMO/LUMO"},
+    {"compound": "SN", "source": "DS001", "doi": "J. Electrochem. Soc. 2019", "data_type": "HOMO/LUMO"},
+    {"compound": "PC", "source": "DS001", "doi": "J. Phys. Chem. C 2014", "data_type": "Redox"},
+    {"compound": "ADN", "source": "DS001", "doi": "J. Power Sources 2020", "data_type": "HOMO/LUMO"}
+  ],
+  "candidate_generation": {
+    "method": "RDKit enumeration",
+    "scaffolds_count": 52,
+    "boron_groups": 15,
+    "phosphorus_groups": 15,
+    "literature_templates": 15,
+    "total_candidates": ">2000",
+    "mw_filter": "<600 Da"
+  },
+  "notes": "Data available at E:\\openclaw\\workspace\\duck\\paper_repo\\data\\"
+}

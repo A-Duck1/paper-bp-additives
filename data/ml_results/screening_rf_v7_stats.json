@@ -1,0 +1,53 @@
+{
+  "pipeline": "RF-only (v7, no XGB)",
+  "n_training": 53,
+  "n_candidates": 14425,
+  "n_valid_predictions": 14425,
+  "score": {
+    "mean": 0.4506,
+    "std": 0.0994,
+    "min": 0.0841,
+    "max": 0.8213
+  },
+  "top200": {
+    "n_B": 53,
+    "n_P": 174,
+    "n_BP": 27,
+    "MW_mean": 248.2,
+    "MW_min": 108.0,
+    "MW_max": 451.9
+  },
+  "homo": {
+    "mean": -7.7134,
+    "std": 0.1687,
+    "min": -8.3792,
+    "max": -7.0048,
+    "norm_mean": 0.5155,
+    "norm_std": 0.1228
+  },
+  "lumo": {
+    "mean": 0.2159,
+    "std": 0.275,
+    "min": -0.3762,
+    "max": 1.265,
+    "norm_mean": 0.3608,
+    "norm_std": 0.1676
+  },
+  "gap": {
+    "mean": 7.7934,
+    "std": 0.2613,
+    "min": 6.9952,
+    "max": 8.6963,
+    "norm_mean": 0.4692,
+    "norm_std": 0.1536
+  },
+  "candidate_types": {
+    "total": 14425,
+    "B_only": 5093,
+    "P_only": 6579,
+    "BP": 2497,
+    "B_any": 7590,
+    "P_any": 9076,
+    "neither": 256
+  }
+}

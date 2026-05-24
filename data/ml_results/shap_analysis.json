@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "model": "RandomForest (n_estimators=500, max_depth=15)",
+    "data": "training_v4.csv (64 samples)",
+    "descriptors": "217 RDKit descriptors",
+    "method": "shap.TreeExplainer"
+  },
+  "results": {
+    "homo": [
+      {
+        "rank": 1,
+        "feature": "BCUT2D_LOGPHI",
+        "mean_abs_shap": 0.04746,
+        "mean_shap": -0.001491
+      },
+      {
+        "rank": 2,
+        "feature": "AvgIpc",
+        "mean_abs_shap": 0.046662,
+        "mean_shap": -0.003034
+      },
+      {
+        "rank": 3,
+        "feature": "PEOE_VSA2",
+        "mean_abs_shap": 0.033312,
+        "mean_shap": 0.004274
+      },
+      {
+        "rank": 4,
+        "feature": "qed",
+        "mean_abs_shap": 0.022745,
+        "mean_shap": 0.001429
+      },
+      {
+        "rank": 5,
+        "feature": "EState_VSA3",
+        "mean_abs_shap": 0.020722,
+        "mean_shap": 0.0014
+      },
+      {
+        "rank": 6,
+        "feature": "MinAbsPartialCharge",
+        "mean_abs_shap": 0.019418,
+        "mean_shap": 0.001737
+      },
+      {
+        "rank": 7,
+        "feature": "VSA_EState9",
+        "mean_abs_shap": 0.018681,
+        "mean_shap": -0.000677
+      },
+      {
+        "rank": 8,
+        "feature": "TPSA",
+        "mean_abs_shap": 0.017496,
+        "mean_shap": 0.001252
+      },
+      {
+        "rank": 9,
+        "feature": "PEOE_VSA9",
+        "mean_abs_shap": 0.016952,
+        "mean_shap": -0.001265
+      },
+      {
+        "rank": 10,
+        "feature": "BCUT2D_LOGPLOW",
+        "mean_abs_shap": 0.015127,
+        "mean_shap": 0.000541
+      }
+    ],
+    "lumo": [
+      {
+        "rank": 1,
+        "feature": "BCUT2D_MWLOW",
+        "mean_abs_shap": 0.059453,
+        "mean_shap": 0.000313
+      },
+      {
+        "rank": 2,
+        "feature": "VSA_EState2",
+        "mean_abs_shap": 0.050095,
+        "mean_shap": 0.001797
+      },
+      {
+        "rank": 3,
+        "feature": "BCUT2D_MRLOW",
+        "mean_abs_shap": 0.029306,
+        "mean_shap": -0.000653
+      },
+      {
+        "rank": 4,
+        "feature": "EState_VSA6",
+        "mean_abs_shap": 0.024201,
+        "mean_shap": -0.001753
+      },
+      {
+        "rank": 5,
+        "feature": "MaxAbsPartialCharge",
+        "mean_abs_shap": 0.023681,
+        "mean_shap": 0.004017
+      },
+      {
+        "rank": 6,
+        "feature": "BCUT2D_MRHI",
+        "mean_abs_shap": 0.021403,
+        "mean_shap": 0.002553
+      },
+      {
+        "rank": 7,
+        "feature": "EState_VSA3",
+        "mean_abs_shap": 0.019823,
+        "mean_shap": 0.001317
+      },
+      {
+        "rank": 8,
+        "feature": "NumHAcceptors",
+        "mean_abs_shap": 0.019693,
+        "mean_shap": 8.4e-05
+      },
+      {
+        "rank": 9,
+        "feature": "EState_VSA8",
+        "mean_abs_shap": 0.016184,
+        "mean_shap": -0.000562
+      },
+      {
+        "rank": 10,
+        "feature": "BCUT2D_LOGPLOW",
+        "mean_abs_shap": 0.015446,
+        "mean_shap": -0.001114
+      }
+    ],
+    "gap": [
+      {
+        "rank": 1,
+        "feature": "EState_VSA3",
+        "mean_abs_shap": 0.091703,
+        "mean_shap": 0.004795
+      },
+      {
+        "rank": 2,
+        "feature": "AvgIpc",
+        "mean_abs_shap": 0.055371,
+        "mean_shap": 0.008884
+      },
+      {
+        "rank": 3,
+        "feature": "PEOE_VSA8",
+        "mean_abs_shap": 0.049983,
+        "mean_shap": -0.004951
+      },
+      {
+        "rank": 4,
+        "feature": "MolLogP",
+        "mean_abs_shap": 0.04003,
+        "mean_shap": -0.003457
+      },
+      {
+        "rank": 5,
+        "feature": "qed",
+        "mean_abs_shap": 0.036053,
+        "mean_shap": -0.005063
+      },
+      {
+        "rank": 6,
+        "feature": "EState_VSA5",
+        "mean_abs_shap": 0.033156,
+        "mean_shap": -0.002017
+      },
+      {
+        "rank": 7,
+        "feature": "Kappa1",
+        "mean_abs_shap": 0.032843,
+        "mean_shap": -0.001046
+      },
+      {
+        "rank": 8,
+        "feature": "VSA_EState7",
+        "mean_abs_shap": 0.028972,
+        "mean_shap": -0.001748
+      },
+      {
+        "rank": 9,
+        "feature": "VSA_EState9",
+        "mean_abs_shap": 0.021184,
+        "mean_shap": -0.000789
+      },
+      {
+        "rank": 10,
+        "feature": "BCUT2D_MWLOW",
+        "mean_abs_shap": 0.021068,
+        "mean_shap": 0.003052
+      }
+    ]
+  }
+}
