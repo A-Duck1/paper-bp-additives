@@ -1,0 +1,34 @@
+{
+  "title": "Machine Learning-Guided Screening of Boron/Phosphorus-Containing Bifunctional Additives for Synergistic SEI/CEI Regulation in Lithium-Ion Batteries",
+  "authors": [
+    {
+      "name": "Author Name 1",
+      "affiliation": "TBD",
+      "email": "TBD",
+      "orcid": "",
+      "contribution": "Conceptualization, Methodology, Investigation, Writing - original draft"
+    },
+    {
+      "name": "Author Name 2",
+      "affiliation": "TBD",
+      "contribution": "Investigation, Data curation"
+    },
+    {
+      "name": "Author Name 3",
+      "affiliation": "TBD",
+      "contribution": "Formal analysis"
+    },
+    {
+      "name": "Author Name 4 (Corresponding)",
+      "affiliation": "TBD",
+      "email": "corresponding@institute.edu", 
+      "contribution": "Supervision, Funding acquisition, Writing - review & editing"
+    }
+  ],
+  "corresponding_author": "Author Name 4",
+  "submission_date": "2026-05-24",
+  "target_journal": "Digital Discovery",
+  "data_availability": "Code and data available at https://github.com/A-Duck1/paper-bp-additives",
+  "zenodo_doi": "",
+  "notes": "Please update author names, affiliations, ORCIDs and corresponding email before submission. Fudan University has RSC OA waiver eligibility."
+}
