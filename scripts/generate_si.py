@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Generate Supplementary Information DOCX for the paper."""
 
 import csv, json, os, sys

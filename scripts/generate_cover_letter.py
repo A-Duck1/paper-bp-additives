@@ -1,4 +1,4 @@
-"""Generate Cover Letter for Digital Discovery submission"""
+﻿"""Generate Cover Letter for Digital Discovery submission"""
 import docx
 from docx import Document
 from docx.shared import Pt, Inches
@@ -85,6 +85,6 @@ doc.add_paragraph('Author Name')
 doc.add_paragraph('Corresponding Author')
 doc.add_paragraph('Email: name@institute.edu')
 
-OUT = r"E:\openclaw\workspace\duck\paper_repo\manuscript\cover_letter.docx"
+OUT = r".\paper_repo\manuscript\cover_letter.docx"
 doc.save(OUT)
 print(f"Cover letter: {OUT}")

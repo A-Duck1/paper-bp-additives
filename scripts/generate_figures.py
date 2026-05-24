@@ -1,4 +1,4 @@
-"""
+﻿"""
 生成论文图表
 """
 import pandas as pd
@@ -13,8 +13,8 @@ rcParams['font.family'] = 'serif'
 rcParams['font.size'] = 10
 rcParams['figure.dpi'] = 300
 
-DATA_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\paper\figures"
+DATA_DIR = r".\data\ml_results"
+OUT_DIR = r".\data\paper\figures"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Training data

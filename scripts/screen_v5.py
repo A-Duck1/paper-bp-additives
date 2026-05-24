@@ -1,4 +1,4 @@
-"""虚拟筛选 v5 — 新候选池 (2393) + RF + XGBoost 双模型交叉筛选"""
+﻿"""虚拟筛选 v5 — 新候选池 (2393) + RF + XGBoost 双模型交叉筛选"""
 import pandas as pd, numpy as np, os, pickle, json
 from datetime import datetime
 from rdkit import RDLogger; RDLogger.logger().setLevel(RDLogger.ERROR)
@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 import xgboost as xgb
 
 DATA_DIR = r"D:\pubchem_data"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR = r".\data\ml_results"
 MODEL_DIR = os.path.join(OUT_DIR, "models_v5")
 os.makedirs(MODEL_DIR, exist_ok=True)
 os.makedirs(OUT_DIR, exist_ok=True)

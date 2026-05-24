@@ -1,4 +1,4 @@
-"""重训模型 v4 — 64训练集"""
+﻿"""重训模型 v4 — 64训练集"""
 import pandas as pd, numpy as np, os, pickle
 from datetime import datetime
 from rdkit import RDLogger; RDLogger.logger().setLevel(RDLogger.ERROR)
@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_absolute_error
 
 DATA_DIR = r"D:\pubchem_data"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR = r".\data\ml_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 log = lambda m: print(f"[{datetime.now().strftime('%H:%M:%S')}] {m}")

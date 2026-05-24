@@ -1,8 +1,8 @@
-"""Add GIN finding to manuscript"""
+﻿"""Add GIN finding to manuscript"""
 import docx
 
-src = r'E:\openclaw\workspace\duck\paper_repo\manuscript\manuscript_v6.docx'
-dst = r'E:\openclaw\workspace\duck\paper_repo\manuscript\manuscript_v6.docx'
+src = r'.\paper_repo\manuscript\manuscript_v6.docx'
+dst = r'.\paper_repo\manuscript\manuscript_v6.docx'
 
 doc = docx.Document(src)
 

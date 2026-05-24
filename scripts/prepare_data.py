@@ -1,4 +1,4 @@
-"""
+﻿"""
 最终数据构建方案：RDKit 化学枚举 + 文献数据
 ============================================
 不再依赖 PubChem API (网络不稳定), 改用:
@@ -20,7 +20,7 @@ import os, json
 from datetime import datetime
 
 DATA_DIR = r"D:\pubchem_data"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR = r".\data\ml_results"
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(OUT_DIR, exist_ok=True)
 

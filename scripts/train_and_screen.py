@@ -1,10 +1,10 @@
-"""
+﻿"""
 ML 训练 + 虚拟筛选 主脚本
 ==========================
 用法: python train_and_screen.py
 输入: D:\pubchem_data\bp_candidates_final.csv (PubChem下载)
       或者内置的训练标签（已知添加剂数据）
-输出: E:\openclaw\workspace\duck\data\ml_results\*
+输出: .\data\ml_results\*
 
 流程:
   1. 加载候选分子（或用内置已知添加剂）
@@ -21,7 +21,7 @@ from datetime import datetime
 warnings.filterwarnings('ignore')
 
 DATA_DIR = r"D:\pubchem_data"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR = r".\data\ml_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 def log(msg):

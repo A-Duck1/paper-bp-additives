@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 """
 generate_figures_v3.py — 图表升级v3 + TOC图
 Output: data/paper/figures/ (PDF + PNG)
@@ -21,13 +21,13 @@ from rdkit.Chem import Draw, AllChem
 
 # ─── Paths ───────────────────────────────────────────────────────
 TRAIN_CSV = r'D:\pubchem_data\training_v4.csv'
-SHAP_JSON = r'E:\openclaw\workspace\duck\data\ml_results\shap_analysis.json'
-TOP200_CSV = r'E:\openclaw\workspace\duck\data\ml_results\screening_rf_v7_top200.csv'
-METRICS_V4 = r'E:\openclaw\workspace\duck\data\ml_results\metrics_v4.json'
-CV_RESULTS = r'E:\openclaw\workspace\duck\data\ml_results\cv_results.json'
-XGB_LOOCV  = r'E:\openclaw\workspace\duck\data\ml_results\xgb_loocv_results.json'
+SHAP_JSON = r'.\data\ml_results\shap_analysis.json'
+TOP200_CSV = r'.\data\ml_results\screening_rf_v7_top200.csv'
+METRICS_V4 = r'.\data\ml_results\metrics_v4.json'
+CV_RESULTS = r'.\data\ml_results\cv_results.json'
+XGB_LOOCV  = r'.\data\ml_results\xgb_loocv_results.json'
 
-OUT_DIR = r'E:\openclaw\workspace\duck\data\paper\figures'
+OUT_DIR = r'.\data\paper\figures'
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # ─── Color Palette ───────────────────────────────────────────────

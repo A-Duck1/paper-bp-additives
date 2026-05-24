@@ -1,12 +1,12 @@
-"""Regenerate SI with v5 (100 samples) data"""
+﻿"""Regenerate SI with v5 (100 samples) data"""
 import docx, json, os, pandas as pd
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.table import WD_TABLE_ALIGNMENT
 
-ML_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+ML_DIR = r".\data\ml_results"
 DATA_DIR = r"D:\pubchem_data"
-OUT = r"E:\openclaw\workspace\duck\paper_repo\manuscript\supplementary_information.docx"
+OUT = r".\paper_repo\manuscript\supplementary_information.docx"
 
 # Load data
 train = pd.read_csv(os.path.join(DATA_DIR, "training_v5.csv"))

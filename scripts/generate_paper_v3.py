@@ -1,4 +1,4 @@
-"""
+﻿"""
 生成修正版论文 Word (v3 — 64训练集 + 1510候选 + 真实R² + LOOCV)
 """
 from docx import Document
@@ -6,7 +6,7 @@ from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 import os
 
-OUT_DIR = r"E:\openclaw\workspace\duck\paper_repo\manuscript"
+OUT_DIR = r".\paper_repo\manuscript"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 doc = Document()

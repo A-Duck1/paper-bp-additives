@@ -1,4 +1,4 @@
-"""
+﻿"""
 大规模数据扩充 v2 — 5000+ 候选 + GNN
 =====================================
 策略:
@@ -14,7 +14,7 @@ from datetime import datetime
 warnings.filterwarnings('ignore')
 
 DATA_DIR = r"D:\pubchem_data"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR = r".\data\ml_results"
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(OUT_DIR, exist_ok=True)
 

@@ -1,4 +1,4 @@
-"""
+﻿"""
 GCN/GIN/GAT 完整调优 — 小样本下GNN架构对比 (v2, 修正early stopping)
 ============================================
 输入: D:\pubchem_data\training_v4.csv (64样本, 53有效)
@@ -23,7 +23,7 @@ from torch_geometric.data import Data, DataLoader
 
 # ── Config ──
 DATA_DIR  = r"D:\pubchem_data"
-OUT_DIR   = r"E:\openclaw\workspace\duck\data\ml_results"
+OUT_DIR   = r".\data\ml_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 os.environ['OMP_NUM_THREADS'] = '1'

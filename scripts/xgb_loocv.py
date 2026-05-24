@@ -1,4 +1,4 @@
-"""XGBoost Leave-One-Out Cross-Validation for training_v4.csv
+﻿"""XGBoost Leave-One-Out Cross-Validation for training_v4.csv
 Compares RDKit descriptors vs Morgan fingerprints (2048 bits)
 
 Background:
@@ -16,8 +16,8 @@ from sklearn.metrics import r2_score, mean_absolute_error
 from xgboost import XGBRegressor
 
 DATA_PATH = r"D:\pubchem_data\training_v4.csv"
-OUTPUT_PATH = r"E:\openclaw\workspace\duck\data\ml_results\xgb_loocv_results.json"
-REPORT_PATH = r"E:\openclaw\workspace\duck\memory\_results\xgb_loocv.md"
+OUTPUT_PATH = r".\data\ml_results\xgb_loocv_results.json"
+REPORT_PATH = r".\memory\_results\xgb_loocv.md"
 
 # RF LOOCV reference (Morgan fingerprints)
 RF_REFERENCE = {

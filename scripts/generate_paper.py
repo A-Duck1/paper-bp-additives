@@ -1,4 +1,4 @@
-"""
+﻿"""
 自动生成论文Word文档
 """
 from docx import Document
@@ -7,7 +7,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 import os, json
 
-OUT_DIR = r"E:\openclaw\workspace\duck\data\paper"
+OUT_DIR = r".\data\paper"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 doc = Document()

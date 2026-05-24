@@ -1,4 +1,4 @@
-"""
+﻿"""
 生成修正版论文图表 v2 (使用真实数据)
 """
 
@@ -12,9 +12,9 @@ rcParams['font.family'] = 'serif'
 rcParams['font.size'] = 10
 rcParams['figure.dpi'] = 300
 
-DATA_DIR = r"E:\openclaw\workspace\duck\data\ml_results"
+DATA_DIR = r".\data\ml_results"
 TRAIN_PATH = r"D:\pubchem_data\training_v4.csv"
-OUT_DIR = r"E:\openclaw\workspace\duck\data\paper\figures"
+OUT_DIR = r".\data\paper\figures"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Load real training data

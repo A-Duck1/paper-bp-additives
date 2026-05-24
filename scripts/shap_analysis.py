@@ -1,4 +1,4 @@
-"""SHAP深度分析 — B/P描述符化学可解释性"""
+﻿"""SHAP深度分析 — B/P描述符化学可解释性"""
 import pandas as pd, numpy as np, os, json, pickle, warnings
 warnings.filterwarnings("ignore")
 from datetime import datetime
@@ -10,8 +10,8 @@ import shap
 log = lambda m: print(f"[{datetime.now().strftime('%H:%M:%S')}] {m}")
 
 DATA_DIR = r"D:\pubchem_data"
-ML_DIR   = r"E:\openclaw\workspace\duck\data\ml_results"
-FIG_DIR  = r"E:\openclaw\workspace\duck\data\paper\figures"
+ML_DIR   = r".\data\ml_results"
+FIG_DIR  = r".\data\paper\figures"
 os.makedirs(FIG_DIR, exist_ok=True)
 os.makedirs(ML_DIR, exist_ok=True)
 

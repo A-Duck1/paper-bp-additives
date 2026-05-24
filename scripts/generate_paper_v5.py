@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Generate manuscript_v5.docx — Full v5 update of B/P bifunctional additives paper.
 """
@@ -9,7 +9,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
 import os, json
 
-OUT_DIR = r'E:\openclaw\workspace\duck\paper_repo\manuscript'
+OUT_DIR = r'.\paper_repo\manuscript'
 os.makedirs(OUT_DIR, exist_ok=True)
 
 doc = Document()
