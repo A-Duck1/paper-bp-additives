@@ -45,16 +45,15 @@ doc.add_paragraph(
 doc.add_paragraph('')
 
 doc.add_paragraph(
-    'In this work, we present an integrated machine learning and density functional theory '
-    'framework for high-throughput screening of boron/phosphorus-containing bifunctional '
+    'In this work, we present a machine learning framework for high-throughput screening of boron/phosphorus-containing bifunctional '
     'electrolyte additives. Key highlights include:'
 )
 
 # Bullet points
 bullets = [
-    'A curated dataset of 100 B/P-containing additives with DFT-calculated HOMO/LUMO energy levels, '
+    'A curated dataset of 100 B/P-containing additives with experimentally known HOMO/LUMO energy levels, '
     'the most comprehensive open dataset for additive electronic properties to date.',
-    'Random Forest models achieving R² = 0.86/0.87/0.83 for HOMO/LUMO/Gap prediction, '
+    'Random Forest models achieving R² = 0.85/0.83/0.80 for HOMO/LUMO/Gap prediction, '
     'with rigorous LOOCV validation (R² = 0.57/0.44/0.62) and SHAP-based chemical interpretability.',
     'A virtual screening of 14,425 candidate molecules across 152 chemical scaffolds, '
     'identifying top candidates with pyrophosphate and phosphonate moieties as promising '

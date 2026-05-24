@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it."
+title: "Machine Learning-Guided Screening of Boron/Phosphorus-Containing Bifunctional Additives for Synergistic SEI/CEI Regulation in Lithium-Ion Batteries"
+authors:
+  - name: "Author Name 1"
+    orcid: ""
+  - name: "Author Name 2"
+  - name: "Author Name 3"
+  - name: "Author Name 4"
+    orcid: ""
+date-released: 2026-05-24
+repository-code: "https://github.com/A-Duck1/paper-bp-additives"
+license: "MIT"
+type: software
+keywords:
+  - lithium-ion batteries
+  - electrolyte additives
+  - machine learning
+  - DFT screening
+  - SEI/CEI regulation
+  - boron
+  - phosphorus
+references:
+  - type: article
+    title: "Machine Learning-Guided Screening of Boron/Phosphorus-Containing Bifunctional Additives for Synergistic SEI/CEI Regulation in Lithium-Ion Batteries"
+    authors:
+      - name: "Author Name 1"
+      - name: "Author Name 2"
+      - name: "Author Name 3"
+      - name: "Author Name 4"
+    journal: "Digital Discovery"
+    year: 2026

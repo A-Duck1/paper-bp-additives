@@ -1,7 +1,10 @@
-数据版本: v2
-时间: 2026-05-23T19:28:47.738857
-训练集: 31 个 (B:10, P:11, Ref:9)
-候选集: 719 个
-描述符: RDKit 217维 + Morgan2048
-模型: RF + XGBoost
-数据来源: Electrolyte Genome, J. Mater. Chem., ACS Energy Lett., JACS
+数据版本: v5 (latest)
+时间: 2026-05-24T12:05:24
+训练集: 100 个 (B:45, P:26, Ref:28, BP:1)
+来源: 78 literature + 22 semi-empirical
+候选集: 14,425 个 (B:5093, P:6579, BP:2497, 其他:256)
+描述符: RDKit 217维 + Morgan 2048-bit
+模型: RF 500 trees + XGBoost + GIN contrast
+筛选: RF-only (v7, 14,425 candidates)
+数据来源: Electrolyte Genome, JACS, ACS Energy Lett., J. Mater. Chem. A, JES, PubChem, RDKit scaffold enumeration
+代码: https://github.com/A-Duck1/paper-bp-additives
