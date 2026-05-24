@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXX)
 
-> **Latest version:** v3 — SHAP analysis & GNN comparison added (2026-05-24)
+> **Latest version:** v5 — Final data version (100 training samples, 14,425 candidates) (2026-05-24)
 
 ## 📋 Overview
 
@@ -40,7 +40,7 @@ Data Curation → Feature Engineering → ML Training → Virtual Screening → 
 │   ├── candidates_v2.csv          # Candidate structures (SMILES)
 │   ├── candidates_v7.csv          # Latest candidate pool (14,425 molecules)
 │   ├── training_additives_v2.csv  # Training set v2 (31 additives)
-│   ├── training_v5.csv            # Latest training set (100 additives)
+│   ├── training_v5.csv            # Training set (100 samples: 45B+26P+1BP+28Ref)
 │   ├── training_features_v2.csv   # Training feature vectors
 │   └── sources.txt                # Data source references
 ├── scripts/                       # All Python scripts (21 total)
@@ -90,11 +90,6 @@ Data Curation → Feature Engineering → ML Training → Virtual Screening → 
 │       └── fig5_performance_summary_v2.*
 ├── manuscript/                    # Manuscript versions
 │   ├── manuscript_v6.docx         # Latest complete manuscript
-│   ├── manuscript_v5.docx         # v5 (SHAP integrated)
-│   ├── manuscript_v4.docx         # v4 (SHAP chapter added)
-│   ├── manuscript_v3.docx         # v3 (LOOCV added)
-│   ├── manuscript_v2.docx         # v2 (data corrected)
-│   ├── manuscript.docx            # v1 (initial)
 │   ├── supplementary_information.docx
 │   └── cover_letter.docx          # Cover letter
 ├── papers/                        # Literature database
@@ -112,13 +107,13 @@ Data Curation → Feature Engineering → ML Training → Virtual Screening → 
 ## 🚀 Key Results
 
 ### Model Performance (LOOCV)
-| Target | RF R² (train) | RF MAE | RF LOOCV R² (Morgan) | XGBoost R² | GIN R² |
-|--------|-------------|--------|---------------------|-------------|--------|
-| HOMO   | 0.797 | 0.219 eV | 0.567 | — | 0.071 |
-| LUMO   | 0.783 | 0.240 eV | 0.435 | — | **0.817** |
-| Gap    | 0.806 | 0.281 eV | 0.622 | — | -2.502 |
+| Target | RF R² (train) | RF LOOCV R² (Morgan) | GIN R² |
+|--------|---------------|---------------------|--------|
+| HOMO   | **0.947** | 0.628 | 0.071 |
+| LUMO   | **0.945** | 0.625 | **0.817** |
+| Gap    | **0.942** | 0.592 | -2.502 |
 
-> **GIN highlight:** Graph Isomorphism Network achieves **LUMO R² = 0.817**, substantially outperforming RF (LOOCV R² = 0.453). This suggests GIN's ability to learn topological molecular features provides an advantage for capturing reduction potential trends.
+> **GIN highlight:** Graph Isomorphism Network achieves **LUMO R² = 0.817**, substantially outperforming RF (LOOCV R² = 0.625). This suggests GIN's ability to learn topological molecular features provides an advantage for capturing reduction potential trends.
 
 ### GNN Comparison
 | Model | HOMO R² | LUMO R² | Gap R² |
@@ -126,7 +121,7 @@ Data Curation → Feature Engineering → ML Training → Virtual Screening → 
 | **GIN** | 0.071 | **0.817** | -2.502 |
 | **GAT** | **0.422** | -0.024 | 0.003 |
 | **GCN** | 0.071 | -0.032 | -3.320 |
-| **RF (LOOCV)** | 0.514 | 0.453 | **0.596** |
+| **RF (LOOCV)** | 0.628 | 0.625 | 0.592 |
 
 - LUMO: GIN outperforms all models (structural/topological learning advantage for reduction potential)
 - HOMO: RF and GAT are comparable; GIN/GCN underperform
@@ -175,7 +170,7 @@ If you use this repository in your research, please cite it:
   month = {05},
   publisher = {GitHub},
   url = {https://github.com/A-Duck1/paper-bp-additives},
-  version = {v3}
+  version = {v5}
 }
 ```
 
