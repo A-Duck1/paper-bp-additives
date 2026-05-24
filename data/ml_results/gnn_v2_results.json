@@ -1,0 +1,48 @@
+{
+  "homo": {
+    "gcn_r2": 0.0707,
+    "gcn_mae": 0.3514,
+    "gin_r2": -3.5796,
+    "gin_mae": 0.6272,
+    "gat_r2": 0.4216,
+    "gat_mae": 0.2885
+  },
+  "lumo": {
+    "gcn_r2": -0.0318,
+    "gcn_mae": 0.5118,
+    "gin_r2": 0.8173,
+    "gin_mae": 0.2147,
+    "gat_r2": -0.0235,
+    "gat_mae": 0.521
+  },
+  "gap": {
+    "gcn_r2": -3.3203,
+    "gcn_mae": 0.436,
+    "gin_r2": -2.5021,
+    "gin_mae": 0.3737,
+    "gat_r2": 0.0032,
+    "gat_mae": 0.2222
+  },
+  "rf_baseline": {
+    "homo": 0.6176,
+    "lumo": -0.4974,
+    "gap": 0.7962
+  },
+  "rf_loocv_reference": {
+    "homo": 0.5141,
+    "lumo": 0.4532,
+    "gap": 0.5955
+  },
+  "conclusion": "homo: best=gat_r2 R\u00b2=0.422 vs RF_LOOCV=0.514 (\u2248RF) | lumo: best=gin_r2 R\u00b2=0.817 vs RF_LOOCV=0.453 (GNN\u80dc\u51fa) | gap: best=gat_r2 R\u00b2=0.003 vs RF_LOOCV=0.596 (RF\u80dc\u51fa)",
+  "config": {
+    "n_samples": 64,
+    "n_valid": {
+      "homo": 53,
+      "lumo": 53,
+      "gap": 53
+    },
+    "cv": "5-fold with val-set early stopping",
+    "epochs": 200,
+    "early_stopping_patience": 30
+  }
+}
