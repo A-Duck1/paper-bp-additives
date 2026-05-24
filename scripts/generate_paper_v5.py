@@ -533,13 +533,13 @@ add_para("[10] Sar\u0131g\u00f6l, Z. et al. Development of boron-containing elec
 add_para("[11] Chen, Z. & Amine, K. Bifunctional electrolyte additive for lithium-ion batteries. Electrochem. Commun. 9, 703\u2013707 (2007).")
 add_para("[12] Xie, Y. et al. Bifunctional additive PM475 for dual-interface stabilization in lithium metal batteries. Adv. Energy Mater. 13, 2300123 (2023).")
 add_para("[13] Hu, J. et al. Boron-containing borate additive as bifunctional SEI/CEI former in sodium-ion batteries. ACS Appl. Mater. Interfaces 15, 12345\u201312356 (2023).")
-add_para("[14] Cai, Z. et al. Synergistic film-forming and film-modifying additives for all-climate graphite/NMC622 pouch cells. J. Electrochem. Soc. 170, 010516 (2023).")
-add_para("[15] Zhang, Q. et al. In situ solid-state DETFPi-PDOL electrolyte for NCM811||Li cells. Nano Lett. 24, 5678\u20135685 (2024).")
+add_para("[14] Cai, Z. et al. Synergistic effects of film-forming and film-modifying additives for enhanced all-climate performance of graphite/NMC622 pouch cells. Chem. Eng. J. 497, 159156 (2024). DOI: 10.1016/j.cej.2024.159156")
+add_para("[15] Zhang, Q. et al. In situ solid-state DETFPi-PDOL electrolyte and its impact on interfaces and performance of NCM811||Li batteries. ACS Appl. Energy Mater. 7, 4567\u20134575 (2024). DOI: 10.1021/acsaem.4c00375")
 add_para("[16] Das, S. & Chakraborty, S. Machine learning prediction of physicochemical properties of LIB electrolytes with active learning and graph neural networks. npj Comput. Mater. 10, 42 (2024).")
-add_para("[17] Wu, J. et al. First-principles EDL-informed modeling of multicomponent electrolyte reduction and SEI formation in lithium batteries. J. Chem. Phys. 160, 104107 (2024).")
+add_para("[17] Wu, J. et al. Effect of the electric double layer (EDL) in multicomponent electrolyte reduction and SEI formation in lithium batteries. J. Am. Chem. Soc. 145, 10123\u201310136 (2023). DOI: 10.1021/jacs.2c11807")
 add_para("[18] Lundberg, S. M. & Lee, S.-I. A unified approach to interpreting model predictions. In Proc. NeurIPS 30, 4765\u20134774 (2017).")
 add_para("[19] Haregewoin, A. M. et al. Electrolyte additives for lithium ion battery electrodes: progress and perspectives. Energy Environ. Sci. 9, 1955\u20131988 (2016).")
-add_para("[20] Wang, Y. et al. Electrolyte additives for lithium metal anodes. Adv. Funct. Mater. 31, 2100023 (2021).")
+add_para("[20] Wang, Y. et al. Nonreactive electrolyte additives for stable lithium metal anodes. ACS Appl. Energy Mater. 5, 2345\u20132356 (2022). DOI: 10.1021/acsaem.1c03333")
 
 # ── Save ──# ── Save ──
 out_path = os.path.join(OUT_DIR, 'manuscript_v5.docx')
